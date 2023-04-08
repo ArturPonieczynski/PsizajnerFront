@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+}
+
+.menu {
+  display: inline-block;
+  height: calc(100vh - 100px);
+  width: 20%;
+  background-color: #f8fcf2;
+
+    button {
+      box-sizing: border-box;
+      margin: 2px 1px;
+      padding: 20px 18px;
+      width: 98%;
+      min-width: 215px;
+      text-align: center;
+      background-color: #c19f8c;
+      color: white;
+      border: none;
+      font-size: 18px;
+
+      li {
+      list-style: none;
+    }
+    }
+
+  button:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.presentation {
+  background-color: #f8fcf2;
+}
