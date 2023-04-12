@@ -1,0 +1,21 @@
+
+.header {
+  height: 23%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f8fcf2;
+  align-items: center;
+  min-width: 830px;
+}
+
+.logo {
+  width: auto;
+  padding: 20px;
+  max-height: 90px;
+  margin: 0 auto;
+}
+
+Button {
+  background-color: rgba(0,0,0,0.1);
+}
