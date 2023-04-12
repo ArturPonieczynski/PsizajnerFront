@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 export const SignIn = () => {
     return (
         <div className={NavigationCSS.link}>
-            <NavLink className={SignInCss.sign}  to="/gift">
+            <NavLink className={SignInCss.sign}  to="/user/login">
                 Login / Sign in
             </NavLink>
         </div>

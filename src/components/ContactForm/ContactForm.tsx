@@ -1,6 +1,7 @@
 import React, {SyntheticEvent, useState} from "react";
+import { apiUrl } from "../../config/api";
 import ContactFormCSS from "./ContactForm.module.scss";
-import {apiUrl} from "../../config/api";
+import {useNavigate} from "react-router-dom";
 
 export const ContactForm = () => {
     const [loading, setLoading] = useState(false);
@@ -18,11 +19,14 @@ export const ContactForm = () => {
         }));
     };
 
+    const navigate = useNavigate();
+
     const sendMail = async (event: SyntheticEvent) => {
         event.preventDefault();
 
+
             try {
-                const res = await fetch(`http://localhost:3001/shop/ad`, {
+                await fetch(`${apiUrl}/shop/contact-form/send`, {
                     method: 'POST',
                     headers: {
                         "content-type": "application/json",
@@ -34,8 +38,10 @@ export const ContactForm = () => {
 
             } finally {
                 setLoading(false);
+                navigate('/contact-form/ok',{replace: true});
             }
-        };
+
+    };
 
         if (loading) {
             return <p>Loading...</p>

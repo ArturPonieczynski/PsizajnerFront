@@ -1,11 +1,11 @@
 import React from "react";
 import SizeChartCSS from "./SizeChart.module.scss";
-import photo from "../../../images/sizingweight_480x480.webp";
+import photo from "../../../images/1681328099124.png";
 
 export const SizeChart = () => {
     return (<>
         <div className={SizeChartCSS.container}>
-            <div className='test'><img src={photo}/></div>
+            <div><img src={photo}/></div>
         </div>
     </>)
 }
