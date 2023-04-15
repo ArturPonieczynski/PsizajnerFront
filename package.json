@@ -15,6 +15,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "mdb-react-ui-kit": "^6.0.0",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
@@ -24,7 +25,8 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build:unix": "REACT_APP_API_URL=/apiPsizajner react-app-rewired build",
+    "build:win": "set REACT_APP_API_URL=/api&& react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },

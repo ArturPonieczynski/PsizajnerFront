@@ -6,7 +6,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 export const BasicBreadcrumbs = () => {
 
-    const linkColor = ({isActive}: { isActive: boolean }) => ({color: isActive ? 'red' : '#232f2f'});
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -48,7 +47,7 @@ export const BasicBreadcrumbs = () => {
                     </MenuItem>
                 </Menu>
                 /
-                <NavLink className={NavigationCSS.link} to="/contact-us">
+                <NavLink className={NavigationCSS.link} to='/contact-form'>
                     Contact
                 </NavLink> /
                 <NavLink className={NavigationCSS.link} to='#'>

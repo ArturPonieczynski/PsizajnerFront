@@ -1,17 +1,23 @@
 .bgc {
   height: calc(100vh - 130px);
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
+  //position: relative;
+  img {
+    width: 100%;
   position: relative;
+  }
 }
 
 .btn {
-  padding-bottom: 5px;
-  border-bottom: 4px solid;
+  display: block;
+  padding: 6px 26px;
+  border: 4px solid;
+  border-radius: 26px;
   color: white;
   font-size: 30px;
   position: absolute;
-  margin-top: 40%;
-  margin-left: 10%;
+  top: 50%;
+  left: 16%;
   text-decoration: none;
 }
